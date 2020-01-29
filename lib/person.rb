@@ -1,10 +1,10 @@
 class Person
-  attr_accessor :name, :birthday, :hair_color, :height, :weight, :handed, :complexion, :t_shirt_size, :wrist_size, :glove_size, :pant_length, :pant_width,
+  attr_accessor :name, :birthday, :hair_color, :height, :weight, :handed, :complexion, :t_shirt_size, :wrist_size, :glove_size, :pant_length, :pant_width
 
   def initialize (attributes=nil)
     if attributes
       attributes.each do |a,f|
-        self.send("#{a}=", f)
+        self.send("#{k}=", v)
       end
     end
   end
